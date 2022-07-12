@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <!-- SEO: SEARCH ENGINE OPTIMIZATION (motores de busca = google) -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="author" content="Verena Sousa">
+    <meta name="description" content="Um website para iniciantes em programação">
+    
+
     <title>Curso Rocketseat - HTML</title>
 </head>
 <body>
-    <h1>Título</h1>
+    <!-- <h1>Título</h1> -->
 
     <!-- 
 
@@ -36,12 +45,92 @@
         - o link pode levar para o google
     -->
 
-    <p><a href="https://www.google.com/" target="_blank"><em> Lorem ipsum</em></a>  dolor, sit amet consectetur adipisicing elit. Corporis inventore quaerat perspiciatis iusto numquam voluptatem esse ab autem soluta hic, omnis fuga corrupti repudiandae accusamus explicabo? Facilis ipsam assumenda minus.</p>
+    <!-- <p><a href="https://www.google.com/" target="_blank"><em> Lorem ipsum</em></a>  dolor, sit amet consectetur adipisicing elit. Corporis inventore quaerat perspiciatis iusto numquam voluptatem esse ab autem soluta hic, omnis fuga corrupti repudiandae accusamus explicabo? Facilis ipsam assumenda minus.</p>
 
     <p> <strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Recusandae amet nam dicta ducimus eum eos, veritatis at aliquam architecto voluptatem, adipisci facere enim nihil voluptate temporibus ex molestiae possimus officiis.</p>
 
-    <a href="https://www.google.com/">Saiba mais</a>
+    <a href="https://www.google.com/">Saiba mais</a> -->
 
     <!-- Conteúdo do texto e caracteres reservados (pesquisar) -->
+
+    <!-- Tabela
+
+    caption - descrição da tabela
+    thead - engloba o cabeçalho
+    tbody - engloba o corpo
+    tfoot - rodapé da tabela
+
+    tr - para linha - table row
+    th - para cabeçalho
+    td - para descrição do conteúdo da linha
+    -->
+
+    <!-- <table>
+        <caption>Pessoas por Idade</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Verena</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Laryssa</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>2 pessoas</td>
+            </tr>
+        </tfoot>
+    </table> -->
+
+    <table>
+        <caption>Produzidos x Vendidos por Loja</caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style ="background-color: blueviolet;">
+            <col span="2" style="background-color: aqua;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <th colspan="2" scope="colgroup">Antônia Pereira</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
